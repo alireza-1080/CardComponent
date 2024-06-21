@@ -1,0 +1,62 @@
+body{
+    /* font-family: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.card--container{
+    width: 592px;
+    height: 424px;
+    border-radius: 12px;
+    background-image: url("../public/images/product.png");
+
+    position: relative;
+}
+
+.card--action-icons-container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.comment--counter{
+    color: #fff;
+    font-size: 20px;
+    cursor: context-menu;
+}
+
+.icon{
+    font-size: 24px;
+}
+
+.comment--icon-container{
+    background-color: #1D2939;
+    padding: 10.5px 13px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.comment-icon{
+    color: #fff;
+}
+
+.like-icon{
+    color: #C9184A;
+    font-size: 26px;
+    cursor: pointer;
+}
