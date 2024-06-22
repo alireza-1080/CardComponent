@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { LiaComments } from "react-icons/lia";
 
 function App() {
-  const [isItLiked, setIsItLiked] = useState(false);
+  const [isItLiked, setIsItLiked] = useState(true);
   const [commentCount, setCommentCount] = useState(12)
 
   const likeClickHandler = () => {
@@ -23,6 +23,10 @@ function App() {
           <div className="like--icon-container">
             {isItLiked ? <FaHeart className='icon like-icon' onClick={likeClickHandler}/> : <FaRegHeart className='icon like-icon' onClick={likeClickHandler}/>}
           </div>
+        </div>
+        <div className="card--content-container">
+          <h4 className='card--content-title'>Gift Items</h4>
+          <h5 className='card--content-details'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, doloremque.</h5>
         </div>
       </div>
     </>
